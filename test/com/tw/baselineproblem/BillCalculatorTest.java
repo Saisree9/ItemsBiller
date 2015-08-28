@@ -13,10 +13,10 @@ public class BillCalculatorTest {
     }
 
     @Test
-    public void shouldReturnReceiptForChocolateBarWhichIsExempted(){
-        BillCalculator billCalculator=new BillCalculator();
-        String actual =billCalculator.receipt("1 chocolate bar at 0.85");
-        assertEquals("1 chocolate bar at 0.85\n SalesTax:0.00\n Total :0.85",actual);
+    public void shouldReturnReceiptForChocolateBarWhichIsExempted() {
+        BillCalculator billCalculator = new BillCalculator();
+        String actual = billCalculator.receipt("1 chocolate bar at 0.85");
+        assertEquals("1 chocolate bar at 0.85\n SalesTax:0.00\n Total :0.85", actual);
     }
 
 }
