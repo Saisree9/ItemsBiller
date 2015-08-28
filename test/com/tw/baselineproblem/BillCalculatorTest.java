@@ -19,4 +19,11 @@ public class BillCalculatorTest {
         assertEquals("1 chocolate bar at 0.85\n SalesTax:0.00\n Total :0.85", actual);
     }
 
+    @Test
+    public void shouldReturnReceiptForItemsWhichAreExempted(){
+        BillCalculator billCalculator=new BillCalculator();
+        String actual=billCalculator.receipt("1 book of 12.36\n1 chocolate bar at 0.85");
+        assertEquals("1 book of 12.36\n1 chocolate bar at 0.85\n SalesTax:0.00\n Total :13.21",actual);
+    }
+
 }
